@@ -1,0 +1,75 @@
+.message__body {
+    margin: 0;
+    overflow: auto;
+    max-height: 80%;
+
+}
+
+.message__body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.message__body::-webkit-scrollbar-thumb {
+    background: #BAB3Ae;
+}
+
+.message__container {
+    background-color: white;
+    border-radius: 8px;
+    float: left;
+    clear: both;
+    margin: 10px 10px 0 10px;
+    position: relative;
+}
+
+.message__name {
+    margin: 2px;
+    padding-left: 10px;
+    color: #66D9B0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.message__container span {
+    color: #C7C7C7;
+    font-size: 10px;
+    padding: 0 5px;
+}
+
+.message__content {
+    margin: 2px 10px;
+    padding-bottom: 5px;
+    font-size: 13.5px;
+}
+
+.message-left {
+    float: left;
+}
+
+.message-right {
+    float: right;
+}
+
+.message-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    left: -6px;
+    top: 0px;
+}
+
+.message-right:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    right: -6px;
+    top: 0px;
+}
